@@ -11,20 +11,29 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.todo{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
 
 .menu{
     background-color: white;
     width: 20%;
+    height: 900px;
     margin: 2%;
     border-radius: 10px;
-    padding: 5%;
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 2%;
 }
 
 .menu-top{
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     gap: 50px;
+    
 }
 
 .menu-top-icon{
@@ -33,15 +42,15 @@ body{
     align-items: center;
     flex-flow: column wrap;
     gap: 10px;
+    margin-top: 20%;
 }
 
 .menu-top-nav .nav{
     display: flex;
-    align-items: center;
+    flex-flow: column wrap;
 }
 
 .menu-button{
-    margin-top: 300%;
     display: flex;
     justify-content: center;
 }
@@ -55,4 +64,65 @@ body{
     background-color: #751AE2;
     color: white;
 }
+
+.cuerpo{
+    width: 75%;
+    padding: 2%;
+
+}
+
+.title{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title h1{
+    color: #751AE2;
+    font-weight: 700;
+
+}
+
+.tarjetas{
+    margin: 7%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20%;
+}
+
+.card-1{
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+    height: 5%;
+}
+
+.card-1-left{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.card-1-left p{
+    font-weight: 700;
+}
+
+.card-2{
+    background-color: white;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-2 p{
+    font-weight: 700;
+}
+
 
