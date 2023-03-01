@@ -46,28 +46,54 @@
 
         <div class="cuerpo">
             <div class="title">
-                <h1>Inicio</h1>
+                <h1>Crear Cliente</h1>
             </div>
 
-            <div class="tarjetas">
-                <div class="card-1">
-                    <div class="card-1-left">
-                        <p>Créditos</p>
-                        <p class="text-primary"">31</p>
-                    </div>
-
-                    <div class=" card-1-right">
-                            <img src="img/216166_credit_card_icon.png" alt="card" height="60" width="60">
-                    </div>
-
-                </div>
-
-                <div class="card-2">
-                    <p>Número de clientes</p>
-                    <p class="text-primary ">32</p>
-                    <img src="img/309035_user_account_human_person_icon.png" alt="user" width="60" height="60">
-                </div>
+            <div class="back">
+                <a href="clientes.html" class="btn btn-css">Atras</a>
             </div>
+
+            <div class="datos">
+                <h4>Datos Personales</h4>
+                
+                <form action="">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control">
+
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" name="apellido" id="apellido" class="form-control">
+
+                    <label for="cupo">Cupo Total</label>
+                    <input type="text" name="cupo" id="cupo" class="form-control">
+
+                    <label for="cc">NIT/CC</label>
+                    <input type="text" name="cc" id="cc" class="form-control"> 
+
+                    <label for="dir">Dirección</label>
+                    <input type="text" name="dir" id="dir" class="form-control">
+
+                    <label for="disponible">Cupo Disponible</label>
+                    <input type="text" name="disponible" id="disponible" class="form-control">
+
+                    <label for="ciudad">Ciudad</label>
+                    <select type="text" name="ciudad" id="ciudad" class="form-control">
+                        <option value=""></option>
+                        <option value="bug">Bucaramanga</option>
+                        <option value="gir">Giron</option>
+                        <option value="pie">Piedecuesta</option>
+                    </select>
+
+                    <label for="tel">Telefono</label>
+                    <input type="text" name="tel" id="tel" class="form-control">
+
+                    <label for="dias">Dias de Gracia</label>
+                    <input type="text" name="dias" id="dias" class="form-control">
+
+                    <label for="contacto">Contacto</label>
+                    <input type="text" name="contacto" id="contacto" class="form-control">
+                </form>
+            </div>
+           
         </div>
     </section>
 </body>

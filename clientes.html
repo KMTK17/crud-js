@@ -46,30 +46,59 @@
 
         <div class="cuerpo">
             <div class="title">
-                <h1>Inicio</h1>
+                <h1>Clientes</h1>
             </div>
 
-            <div class="tarjetas">
-                <div class="card-1">
-                    <div class="card-1-left">
-                        <p>Créditos</p>
-                        <p class="text-primary"">31</p>
+            <div class="tabla">
+                <div class="tabla-top">
+                    <div class="tabla-top-search">
+                        <input type="search" name="buscar" id="buscar" placeholder="Nombre, NIT o CC">
+                        <button class="btn btn-css"><img src="img/3844432_magnifier_search_zoom_icon.png" alt="search" width="20" height="20"><p>Buscar</p></button>
                     </div>
 
-                    <div class=" card-1-right">
-                            <img src="img/216166_credit_card_icon.png" alt="card" height="60" width="60">
+                    <div class="tabla-top-crear">
+                        <a href="crearCliente.html" class="btn btn-css">Crear Cliente</a>
                     </div>
-
                 </div>
 
-                <div class="card-2">
-                    <p>Número de clientes</p>
-                    <p class="text-primary ">32</p>
-                    <img src="img/309035_user_account_human_person_icon.png" alt="user" width="60" height="60">
+                <div class="tabla-cuerpo">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="thead-inicio">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">NIT/CC</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Ciudad</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Cupo Disponible</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col" class="thead-fin">Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Denilson</td>
+                                <td>Gonzalez</td>
+                                <td>1001947139</td>
+                                <td>Cll 3AN #8-145 T5 Apto 320</td>
+                                <td>Piedecuesta</td>
+                                <td>3054476465</td>
+                                <td>1'200.000</td>
+                                <td>Activo</td>
+                                <td><button class="btn"><img src="img/352547_edit_mode_icon.png" alt="edit" width="20" height="20"></button> <button class="btn"><img src="img/4115230_cancel_close_delete_icon.png" alt="cancel" width="20" height="20"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+
+            
         </div>
     </section>
+
+    
 </body>
 
 </html>
