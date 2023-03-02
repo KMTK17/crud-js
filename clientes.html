@@ -27,10 +27,12 @@
                 <div class="menu-top-nav">
                     <nav>
                         <ul class="nav">
-                            <li class="nav-item"><a href="index.html" class="nav-link"><img src="/img/216242_home_icon.png" alt="home"
-                                        width="30" height="30">Inicio</a></li>
-                            <li class="nav-item"><a href="clientes.html" class="nav-link"><img src="img/2703063_user_man_person_icon.png"
-                                        alt="client" width="30" height="30">Clientes</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link"><img
+                                        src="/img/216242_home_icon.png" alt="home" width="30" height="30">Inicio</a>
+                            </li>
+                            <li class="nav-item"><a href="clientes.html" class="nav-link"><img
+                                        src="img/2703063_user_man_person_icon.png" alt="client" width="30"
+                                        height="30">Clientes</a></li>
                             <li class="nav-item"><a class="nav-link"><img
                                         src="img/2318459_coins_currency_stacked coins_coin_money_icon.png" alt="credits"
                                         width="30" height="30">Creditos</a></li>
@@ -53,11 +55,13 @@
                 <div class="tabla-top">
                     <div class="tabla-top-search">
                         <input type="search" name="buscar" id="buscar" placeholder="Nombre, NIT o CC">
-                        <button class="btn btn-css"><img src="img/3844432_magnifier_search_zoom_icon.png" alt="search" width="20" height="20"><p>Buscar</p></button>
+                        <button class="btn btn-css" title="Buscar"><img src="img/3844432_magnifier_search_zoom_icon.png" alt="search"
+                                width="20" height="20">
+                        </button>
                     </div>
 
                     <div class="tabla-top-crear">
-                        <a href="crearCliente.html" class="btn btn-css">Crear Cliente</a>
+                        <a id="client" class="btn btn-css">Crear Cliente</a>
                     </div>
                 </div>
 
@@ -87,18 +91,200 @@
                                 <td>3054476465</td>
                                 <td>1'200.000</td>
                                 <td>Activo</td>
-                                <td><button class="btn"><img src="img/352547_edit_mode_icon.png" alt="edit" width="20" height="20"></button> <button class="btn"><img src="img/4115230_cancel_close_delete_icon.png" alt="cancel" width="20" height="20"></button></td>
+                                <td><button class="btn" id="edit" title="Editar"><img src="img/352547_edit_mode_icon.png" alt="edit" width="20"
+                                            height="20"></button> <button class="btn" title="Eliminar"><img 
+                                            src="img/4115230_cancel_close_delete_icon.png" alt="cancel" width="20"
+                                            height="20"></button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            
         </div>
     </section>
 
+    <section class="modal-edit">
+        <div class="modal-edit-container">
+            <div class="cuerpo">
+                <div class="title">
+                    <h1>Detalles de Cliente</h1>
+                </div>
+
+                <div class="back">
+                    <a class="btn btn-css" id="back-edit">Atras</a>
+                </div>
+
+                <div class="datos">
+                    <h4>Datos Personales</h4>
+
+                    <form action="">
+                        <div class="label">
+                            <label for="nombre" class="form-label">Nombres</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombres">
+                        </div>
+
+                        <div class="label">
+                            <label for="apellido" class="form-label">Apellidos</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control"
+                                placeholder="Apellidos">
+                        </div>
+                        <div class="label">
+                            <label for="cupo" class="form-label">Cupo Total</label>
+                            <input type="text" name="cupo" id="cupo" class="form-control" placeholder="Cupo Total">
+                        </div>
+                        <div class="label">
+                            <label for="cc" class="form-label">NIT/CC</label>
+                            <input type="text" name="cc" id="cc" class="form-control" placeholder="NIT / CC">
+                        </div>
+                        <div class="label">
+                            <label for="dir" class="form-label">Dirección</label>
+                            <input type="text" name="dir" id="dir" class="form-control" placeholder="Dirección">
+                        </div>
+                        <div class="label">
+                            <label for="disponible" class="form-label">Cupo Disponible</label>
+                            <input type="text" name="disponible" id="disponible" class="form-control"
+                                placeholder="Cupo Disponible">
+                        </div>
+                        <div class="label">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <select type="text" name="ciudad" id="ciudad" class="form-select">
+                                <option value="">Seleccionar...</option>
+                                <option value="bug">Bucaramanga</option>
+                                <option value="gir">Giron</option>
+                                <option value="pie">Piedecuesta</option>
+                            </select>
+                        </div>
+                        <div class="label">
+                            <label for="tel" class="form-label">Telefono</label>
+                            <input type="text" name="tel" id="tel" class="form-control" placeholder="Telefono">
+                        </div>
+                        <div class="label">
+                            <label for="dias" class="form-label">Dias de Gracia</label>
+                            <input type="text" name="dias" id="dias" class="form-control" placeholder="Dias de Gracia">
+                        </div>
+                        <div class="label">
+                            <label for="contacto" class="form-label">Contacto</label>
+                            <input type="text" name="contacto" id="contacto" class="form-control"
+                                placeholder="Contacto">
+
+                            <div class="label-button">
+                                <button class="btn btn-css">Guardar Cambios</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="modal-client">
+        <div class="modal-client-container">
+            <section class="todo">
+                <div class="menu">
+                    <div class="menu-top">
+                        <div class="menu-top-icon">
+                            <img src="/img/285655_user_icon.png" alt="user" width="50" height="50">
+                            <p>Admin</p>
+                        </div>
+        
+                        <div class="menu-top-nav">
+                            <nav>
+                                <ul class="nav">
+                                    <li class="nav-item"><a href="index.html" class="nav-link"><img src="/img/216242_home_icon.png" alt="home"
+                                                width="30" height="30">Inicio</a></li>
+                                    <li class="nav-item"><a href="clientes.html" class="nav-link"><img src="img/2703063_user_man_person_icon.png"
+                                                alt="client" width="30" height="30">Clientes</a></li>
+                                    <li class="nav-item"><a class="nav-link"><img
+                                                src="img/2318459_coins_currency_stacked coins_coin_money_icon.png" alt="credits"
+                                                width="30" height="30">Creditos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+        
+                    <div class="menu-button">
+                        <button class="btn btn-css">Cerrar sesión</button>
+                    </div>
+                </div>
+        
+                <div class="cuerpo">
+                    <div class="title">
+                        <h1>Nuevo Cliente</h1>
+                    </div>
+        
+                    <div class="back">
+                        <a id="back-client" class="btn btn-css">Atras</a>
+                    </div>
+        
+                    <div class="datos">
+                        <h4>Datos Personales</h4>
+                        
+                        <form action="" >
+                            <div class="label">
+                                <label for="nombre" class="form-label">Nombres</label>
+                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombres">
+                            </div>
+                           
+                            <div class="label">
+                                <label for="apellido" class="form-label">Apellidos</label>
+                                <input type="text" name="apellido" id="apellido" class="form-control" placeholder="Apellidos">
+                            </div>
+                            <div class="label">
+                                <label for="cupo" class="form-label">Cupo Total</label>
+                                <input type="text" name="cupo" id="cupo" class="form-control" placeholder="Cupo Total">
+                            </div>
+                            <div class="label">
+                                <label for="cc" class="form-label">NIT/CC</label>
+                                <input type="text" name="cc" id="cc" class="form-control" placeholder="NIT / CC"> 
+                            </div>
+                            <div class="label">
+                                <label for="dir" class="form-label">Dirección</label>
+                                <input type="text" name="dir" id="dir" class="form-control" placeholder="Dirección">
+                            </div>
+                            <div class="label">
+                                <label for="disponible" class="form-label">Cupo Disponible</label>
+                                <input type="text" name="disponible" id="disponible" class="form-control" placeholder="Cupo Disponible">
+                            </div>
+                            <div class="label">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <select type="text" name="ciudad" id="ciudad" class="form-select">
+                                    <option value="">Seleccionar...</option>
+                                    <option value="bug">Bucaramanga</option>
+                                    <option value="gir">Giron</option>
+                                    <option value="pie">Piedecuesta</option>
+                                </select>
+                            </div>
+                            <div class="label">
+                                <label for="tel" class="form-label">Telefono</label>
+                                <input type="text" name="tel" id="tel" class="form-control" placeholder="Telefono">
+                            </div>
+                            <div class="label">
+                                <label for="dias" class="form-label">Dias de Gracia</label>
+                                <input type="text" name="dias" id="dias" class="form-control" placeholder="Dias de Gracia">
+                            </div>
+                            <div class="label">
+                                <label for="contacto" class="form-label">Contacto</label>
+                                <input type="text" name="contacto" id="contacto" class="form-control" placeholder="Contacto">
+        
+                                <div class="label-button">
+                                    <button class="btn btn-css">Guardar Cambios</button>
+                                </div>
+                            </div>
+        
+        
+                        </form>
+                    </div>
+                   
+                </div>
+            </section>
+        </div>
+    </section>
     
+
 </body>
 
 </html>
